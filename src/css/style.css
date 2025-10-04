@@ -1,0 +1,171 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--neutral-medium);
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 50px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
+    gap: 3rem;
+}
+
+.main .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+
+}
+
+.introduction h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.introduction p {
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 15px 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--neutral-soft);
+    color: #fff;
+}
+
+.social {
+    list-style-type: none;
+    gap: 15px;
+}
+
+.social {
+    width: 90%;
+    display: flex;
+    padding: 20px 0;
+    justify-content: flex-end;
+}
+
+.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    color: var(--neutral-soft);
+}
+
+.attribution {
+    color: #fff;
+}
+
+.attribution a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.attribution a:hover {
+    color: var(--neutral-soft);
+}
+
+@media(max-width: 930px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction {
+        width: 50%;
+        text-align: center;
+    }
+
+    .introduction h1 {
+        font-size: 30px;
+    }
+
+    .button {
+        padding: 15px;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduction h1 {
+        line-height: 1.5;
+        font-size: 26px;
+    }
+
+    .introduction .button {
+        padding: 15px 30px;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .attribution {
+        text-align: center;
+        margin-top: 43px;
+    }
+}
